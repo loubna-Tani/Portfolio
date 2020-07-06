@@ -1,43 +1,18 @@
-/*Global Style*/
+$header1: 2rem;
+$header2: 3rem;
+$header3: 2rem;
+$header4: 1.5rem;
+$text: 1.5rem;
+$gradient: linear-gradient(left, #c456be, #c7a4bf);
+$background-color: #154353;
+$gray-text: #2c2c2c;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-h1 {
-  font-size: var(--header1);
-}
-
-li,
-button,
-label,
-input,
-a,
-p {
-  font-size: var(--text);
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
-h2 {
-  font-size: var(--header2);
-}
-h3 {
-  font-size: var(--header3);
-}
-h4,
-h5 {
-  font-size: var(--header4);
-}
-
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
+@import "global";
+@import "intro";
