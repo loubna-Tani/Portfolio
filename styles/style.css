@@ -11,7 +11,9 @@ html {
 }
 
 body {
-  background-image: url("/img/laptop.jpg");
+  background-image: url("/Portfolio/img/laptop.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 h1 {
